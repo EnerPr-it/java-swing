@@ -9,9 +9,13 @@ import javax.swing.table.TableRowSorter;
 
 import mdlaf.MaterialLookAndFeel;
 
-public class dashboard extends JFrame {
+public class Dashboard extends JFrame {
 
-    private JTextField textField;
+    /**
+	 * 
+	 */
+	
+	private JTextField textField;
     private JTextArea textArea;
     private JTable table;
     private JComboBox<String> comboBox;
@@ -25,14 +29,14 @@ public class dashboard extends JFrame {
         EventQueue.invokeLater(() -> {
             try {
                 UIManager.setLookAndFeel(new MaterialLookAndFeel());
-                new dashboard().setVisible(true);
+                new Dashboard().setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
     }
 
-    public dashboard() {
+    public Dashboard() {
         setTitle("Gestión de Tareas");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(900, 450);
